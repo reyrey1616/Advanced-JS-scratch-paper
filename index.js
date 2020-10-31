@@ -1,13 +1,19 @@
 // Higher order function
+const multiply = (num1) => (num2) => console.log(num1 * num2);
+multiply(4)(6);
 
-const multiplyBy = function (num1) {
-	return function (num2) {
-		console.log(num1 * num2);
-	};
-};
+// Closures
+const greet = (greeting) => (fname) => (lname) =>
+	console.log(`${greeting} ${fname} ${lname}`);
 
-const multiplyByFive = multiplyBy(5);
-const multiplyByThree = multiplyBy(3);
+const greetHello = greet('Hello');
+greetHello('Rey')('Guidoriagao');
 
-multiplyByFive(10);
-multiplyByThree(10);
+function callMeMaybe() {
+	setTimeout(function () {
+		console.log(callMe);
+	}, 5000);
+	let callMe = 'Hi there';
+}
+
+callMeMaybe();
