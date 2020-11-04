@@ -1,1 +1,2 @@
-require('./closure');
+// require('./closure');
+require('./prototypes');
