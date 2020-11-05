@@ -1,3 +1,4 @@
 // require('./closure');
 // require('./prototypes');
-require('./oop');
+// require('./oop');
+require('./functional');
