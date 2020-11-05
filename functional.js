@@ -1,30 +1,3 @@
-// E-COMMERCE SHOPPING WITH FUNCTIONAL JAVASCRIPT
-const user = {
-	name: 'Kim',
-	active: true,
-	cart: [],
-	purchases: [],
-};
-
-const item = {
-	name: 'White Shirt',
-	price: 99,
-};
-
-const withTax = (price) => {
-	return price + price * 0.03;
-};
-
-const addItemToCart = (item) => {
-	item.price = withTax(item.price);
-	user.cart.push(item);
-};
-
-const purchaseItem = () => {
-	user.cart.map((item) => user.purchases.push(item));
-	user.cart = [];
-};
-
 // addItemToCart(item);
 // console.log(user);
 
