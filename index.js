@@ -3,4 +3,5 @@
 // require('./oop');
 // require('./functional');
 // require('./e-commerce-fp');
-require('./promises');
+// require('./promises');
+require('./modules');
